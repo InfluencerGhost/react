@@ -1,6 +1,13 @@
-import Card from "./Card.jsx";
+import Card from "./card.jsx";
 function App() {
-  return <Card />;
+  return (
+    <>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </>
+  );
 }
 
 export default App;
