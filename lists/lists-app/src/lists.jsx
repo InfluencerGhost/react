@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function List({ items = [], category = "Category" }) {
-  const itemList = [...items];
+export default function List(props) {
+  const itemList = props.items;
 
   itemList.sort((a, b) => {
     a.name.localeCompare(b.name);

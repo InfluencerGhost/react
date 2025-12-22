@@ -1,0 +1,32 @@
+.counter {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+h1 {
+  background-color: green;
+  border-radius: 5px;
+  font-size: 3em;
+  color: white;
+  margin: 0;
+}
+
+p {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1.5em;
+  color: white;
+  background-color: green;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(120, 100%, 15%);
+}
