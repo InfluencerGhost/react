@@ -12,7 +12,7 @@ export default function ColorPicker() {
         style={{
           backgroundColor: color,
           color:
-            parseInt(color.slice(1), 16) > 0x808080 ? "#000000" : "#FFFFFF",
+            parseInt(color.slice(1), 16) > 0x808080 ? "#000000" : "#ffffffff",
         }}
       >
         You selected {color.toUpperCase()}
