@@ -41,8 +41,7 @@ function Component() {
       <h2>List of Car Objects</h2>
       <ul>
         {car.map((element, index) =>
-          <li key={index} onClick={() => handleRemoveCar(index)}> {element.year} {element.color} {element.model} {element.make} </li>
-        )}
+          <li key={index} onClick={() => handleRemoveCar(index)}> {element.year} {element.color} {element.model} {element.make} </li>)}
       </ul>
       <label>Year: </label>
       <input type="number" value={carYear} onChange={handleUpdateCarYear} />

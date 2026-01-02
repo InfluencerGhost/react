@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-input {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.todo-add-btn {
+  color: white;
+  background-color: hsl(120, 100%, 29%);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.todo-add-btn:hover {
+  background-color: hsl(120, 100%, 19%);
+}
+.todo-item {
+  border: solid 1px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  margin: 10px;
+  max-width: 500px;
+}
+
+.todo-item .todo-item-text {
+  margin-right: 150px;
+}
+
+.todo-item .delete-btn {
+  color: white;
+  background-color: hsl(0, 100%, 50%);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.todo-item .delete-btn:hover {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.todo-item .up-down-btn {
+  color: white;
+  background-color: hsl(216, 91%, 48%);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.todo-item .up-down-btn:hover {
+  background-color: hsl(216, 91%, 38%);
+}
