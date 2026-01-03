@@ -1,23 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [doubleCount, setDoubleCount] = useState(2)
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    document.title = `You clicked ${count} times and ${doubleCount}`; 
-  }, [count, doubleCount]);
-  
+    window.addEventListener('resize', handleResize);
+    console.log("Event Listener Added")
+
+    return () => {
+      window.addEventListener('resize', handleResize);
+      console.log("Event Listener removed")
+
+    }
+  }, [])
+
+  function handleResize() {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }
 
   return (
     <>
-    <button onClick={() => setCount(count + 1)}>
-      Click me
-    </button>
-
-    <button onClick={() => setDoubleCount(doubleCount + 1)}>
-      Click me 2
-    </button>
+      <p>Window Width: {width}px</p>
+      <p>Window Height: {height}px</p>
     </>
   );
 }
