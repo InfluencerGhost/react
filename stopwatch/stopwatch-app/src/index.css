@@ -1,0 +1,53 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.display{
+    font-size: 5rem;
+    font-family: monospace;
+    color: hsl(0, 0%, 50%);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.452);
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.start-btn {
+    background-color: hsl(120, 100%, 32%);
+}
+.start-btn:hover {
+    background-color: hsl(120, 100%, 27%);
+}
+
+.stop-btn {
+    background-color: hsl(0, 93%, 47%);
+}
+.stop-btn:hover {
+    background-color: hsl(0, 93%, 42%);
+}
+
+.reset-btn {
+    background-color: hsl(241, 99%, 43%);
+}
+.reset-btn:hover {
+    background-color: hsl(241, 99%, 38%);
+}
