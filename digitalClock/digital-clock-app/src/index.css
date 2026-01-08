@@ -15,6 +15,7 @@ body {
 }
 
 .clock-container {
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   width: 100vw;
 }
